@@ -1,0 +1,13 @@
+.company-title {
+    font-size: 2em;
+    display: inline;
+}
+.company-title > * {
+    font-family: "poppins-bold";
+}
+.company-title--part1 {
+    color: var(--title-color);
+}
+.company-title--part2 {
+    color : var(--title-color2)
+}

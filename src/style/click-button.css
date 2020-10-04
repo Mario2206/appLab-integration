@@ -1,0 +1,7 @@
+.click-button {
+    padding: 15px 35px;
+    background-color: var(--background-button);
+    color: white;
+    font-family: "poppins-bold";
+    border-radius: 100px;
+}
