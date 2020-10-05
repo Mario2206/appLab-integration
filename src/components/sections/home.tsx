@@ -10,10 +10,11 @@ const Home = () => (
     <div className="container-section container-home">
         <Header />
         <section className = "home">
+            <img src="/img/buildings.png" alt="" className="home--background"/>
             <div className="home--title-part">
                 <RewardBanner />
                 <MainTitle value="Best app for your modern lifestyle"/>
-                <Description>
+                <Description className="home--title-part--items">
                     Increase productivity with a simple to-do app, app for managing your personal budgets 
                 </Description>
                 <div className="home--container-buttons">

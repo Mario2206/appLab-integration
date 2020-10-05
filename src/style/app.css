@@ -15,10 +15,13 @@
 body{
     font-size: 90%;
 }
+.main-container {
+    padding: 0 var(--margin-border-size);
+}
 .container-section {
     height: 100vh;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
     justify-content: space-around;
 }
 

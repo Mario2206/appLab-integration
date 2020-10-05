@@ -1,0 +1,17 @@
+.reward-banner {
+    display: inline-block;
+    align-items: center;
+    background-color: #e2eaed;
+    border-radius: 100px;
+}
+.reward-banner--badge {
+    display: inline-block;
+    background-color: #feaa25;
+    border-radius: 100px;
+    padding: 5px 10px;
+
+}
+.reward-banner--text {
+    font-size: 0.9em;
+    padding: 0 40px 0 10px;
+}

@@ -1,0 +1,22 @@
+.info-points {
+    display: flex;
+}
+.info-points--container-img {
+    border-radius: 100px;
+}
+.info-points--img {
+    display: inline-block;
+    padding: 15px;
+}
+/* If flex-direction === row */
+.info-points--text-row-container {
+    padding-left: 30px;
+}
+/* If flex-direction === column */
+.info-points--text-column-container {
+    padding-top: 30px;
+}
+.info-points--title {
+    padding: 10px 0;
+    font-size: 1.4em;
+}

@@ -1,0 +1,11 @@
+.learn {
+    display: flex;
+    padding: 100px 0;
+}
+.learn--presentation {
+    padding: 0 300px 0 100px;
+    align-self: center;
+}
+.learn--presentation > * {
+    margin: 30px 0;
+}

@@ -1,3 +1,46 @@
 .features {
     display: flex;
+    padding: 100px 0;
+}
+.features--img-container {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    position: relative;
+    margin-right: 10%;
+}
+.features--ellipse-1 {
+    position: absolute;
+    background-color: #f4f4f5;
+    width: 80% ;
+    height: 400px;
+    border-radius: 50px;
+    z-index: -3;
+    bottom: 20%;
+    transform: rotate(120deg);
+    
+}
+.features--ellipse-2 {
+    position: absolute;
+    background-color: #efedf6;
+    width: 60% ;
+    height: 300px;
+    border-radius: 50px;
+    z-index: -2;
+    bottom: 20%;
+    transform: rotate(-35deg); 
+}
+.features--ellipse-cover {
+    position: absolute;
+    z-index: -1;
+} 
+.features--phone-img {
+    width: 100%;
+}
+.features--description {
+    width: 45%;
+}
+.features--container-features {
+    padding: 30px 0;
+    width: 70%;
 }

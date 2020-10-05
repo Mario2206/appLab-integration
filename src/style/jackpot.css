@@ -1,0 +1,17 @@
+.jackpot {
+    padding: 100px 0;
+}
+.jackpot--first-part {
+    display: flex;
+    width: 80%;
+}
+.jackpot--side-bar {
+    margin: 0 50px;
+}
+.jackpot--description {
+    align-self: center;
+}
+.jackpot--container-infos {
+    display: flex;
+    padding: 100px 0;
+}

@@ -1,8 +1,8 @@
 import React from 'react';
 import "../../style/main-title.css"
 
-const MainTitle = ({value} : {value : string}) => (
-    <h1 className="main-title">
+const MainTitle = ({value, className} : {value : string, className? : string}) => (
+    <h1 className={`main-title ${className}`}>
         {value}
     </h1>   
 )
