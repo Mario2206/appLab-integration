@@ -6,7 +6,7 @@ import "../../style/choose-app.css"
 
 const ChooseApp = ()=> {
 
-    const paddingInfoPoints = ""
+
 
     return(
         <section className="choose-app">
@@ -24,7 +24,6 @@ const ChooseApp = ()=> {
                     backgroundColor="#ffecef" 
                     title="App Development"
                     row={false}
-                    padding={paddingInfoPoints}
                     alignItems="center"
                     justifyContent="flex-start"
                 >
@@ -36,7 +35,6 @@ const ChooseApp = ()=> {
                     backgroundColor="#eaf9ff" 
                     title="App Development"
                     row={false}
-                    padding=""
                     alignItems="center"
                     justifyContent="flex-start"
                 >
@@ -48,21 +46,17 @@ const ChooseApp = ()=> {
                     backgroundColor="#fff6d3" 
                     title="App Development"
                     row={false}
-                    padding=""
                     alignItems="center"
                     justifyContent="flex-start"
                 >
                             Get your blood tests delivered at home collect a sample from the news your blood test
                 </InfoPoints>               
-            </div>
-            <div className="choose-app--container-items">
                 <InfoPoints 
                     imagePath="/img/custom.png" 
                     color="#313b5b" 
                     backgroundColor="#e4ffee" 
                     title="App Development"
                     row={false}
-                    padding={paddingInfoPoints}
                     alignItems="center"
                     justifyContent="flex-start"
                 >
@@ -74,7 +68,6 @@ const ChooseApp = ()=> {
                     backgroundColor="#f4f4ff" 
                     title="App Development"
                     row={false}
-                    padding=""
                     alignItems="center"
                     justifyContent="flex-start"
                 >
@@ -86,7 +79,6 @@ const ChooseApp = ()=> {
                     backgroundColor="#fdeee4" 
                     title="App Development"
                     row={false}
-                    padding=""
                     alignItems="center"
                     justifyContent="flex-start"
                 >

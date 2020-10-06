@@ -1,0 +1,36 @@
+.ultimate-features {
+    display: flex;
+    flex-wrap: wrap;
+}
+.utlimate-features--left-part{
+    width: 60%;
+}
+.ultimate-features--container-title {
+    width: 60%;
+    padding-bottom: 30px;
+}
+.ultimate-features--container-info-points {
+    display: grid;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 10%;
+    
+}
+.ultimate-features--img-part {
+    width: 40%;
+    align-self: stretch;
+    position: relative;
+}
+.ultimate-features--img {
+    position: absolute;
+    width: 90%;
+}
+.ultimate-features--img_front {
+    z-index: 1;
+    right: -20%;
+    bottom: 0;
+}
+.ultimate-features--img_back {
+    z-index: -1;
+    bottom: 5%;
+}

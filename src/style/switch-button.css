@@ -1,0 +1,87 @@
+.switch-button {
+    --border-radius : 100px;
+    --anim-time : 1s;
+    --unselect-color : #898a8e;
+
+    border: 2px solid #ebebeb;
+    display: inline-block;
+    border-radius: var(--border-radius);
+    padding: 2px;
+    overflow: hidden;
+}
+.switch-button--btn {
+    border-radius: var(--border-radius);
+    padding: 10px 20px;
+    font-family: "poppins-bold";
+    color: var(--unselect-color);
+    border: none;
+    background-color: transparent;
+    position: relative;
+}
+.switch-button--background {
+    position: absolute;
+    background-color: transparent;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: var(--border-radius);
+}
+.switch-button--background_selected {
+    background-color: var(--background-button);
+}
+.switch-button--background_selected_left {
+    animation: fadeBtnLeft var(--anim-time);
+}
+.switch-button--background_selected_right {
+    animation: fadeBtnRight var(--anim-time);
+}
+.switch-button--btn_selected {
+    color: white;
+    animation: fadeInTextSelect 2s;
+}
+.switch-button--btn_unselected {
+    animation: fadeInTextUnselect 2s;
+}
+
+
+.switch-button--btn:focus {
+    outline: none;
+}
+.switch-button--btn:hover {
+    cursor: pointer;
+}
+
+@keyframes fadeBtnRight {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes fadeBtnLeft {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
+@keyframes fadeInTextUnselect {
+    from {
+        color : white
+    }
+    to {
+        color : var(--unselect-color)
+    }
+}
+@keyframes fadeInTextSelect {
+    from {
+        color : var(--unselect-color)
+    }
+    to {
+        color : white
+    }
+}

@@ -13,7 +13,10 @@
     padding: 50px 0;
 }
 .choose-app--container-items {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap : 15%;
     padding: 50px 0;
 }
 .choose-app--container-items .info-points--title {
