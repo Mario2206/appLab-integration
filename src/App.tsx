@@ -7,6 +7,7 @@ import Jackpot from './components/sections/jackpot';
 import Learn from './components/sections/learn';
 import Trusted from './components/sections/trusted';
 import UltimateFeatures from './components/sections/ultimate-features';
+import World from './components/sections/world';
 import "./style/app.css";
 
 
@@ -21,6 +22,7 @@ function App() {
       <ChooseApp />
       <UltimateFeatures />
       <Charges />
+      <World />
     </div>
   );
 }

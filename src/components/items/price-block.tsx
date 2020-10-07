@@ -35,8 +35,8 @@ export default function PriceBlock ({keyPoints, price, period, title, descriptio
                 
             </thead>
             <tbody>
-                {keyPoints.map((item : string)=>(
-                    <tr className="price-block--negative-color price-block--keypoints">
+                {keyPoints.map((item : string, index : number)=>(
+                    <tr className="price-block--negative-color price-block--keypoints" key={index}>
                         {item}
                     </tr>
                 ))}

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import "../../style/info-points.css"
 import Description from './description';
+import ThirdTitle from './third-title';
 
 interface IEInfoPoints {
     imagePath : string, 
@@ -29,9 +30,7 @@ const InfoPoints = ({imagePath, color, backgroundColor, title, children, row, pa
                 <img src={imagePath} alt="item" className="info-points--img"/>
             </div>
             <div className={`${row ? "info-points--text-row-container" : "info-points--text-column-container"}`}>
-                <h3 style={{color}} className="info-points--title">
-                    {title}
-                </h3>
+                <ThirdTitle value={title} color={color} />
                 <Description className="info-points--description">
                     {children}
                 </Description>        
