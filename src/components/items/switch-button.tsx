@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
-import "../../style/switch-button.css"
+import "../../style/items/switch-button.css"
 
 interface IESwitchProps {
     firstValue : string,
     secondValue : string,
-    onChange? : ()=>void
+    onChange? : (()=>void) | null
 }
 
 export default function SwitchButton ({firstValue, secondValue, onChange} : IESwitchProps) {
@@ -17,10 +17,11 @@ export default function SwitchButton ({firstValue, secondValue, onChange} : IESw
     const [btnState2, setBtnState2] = useState(false)
 
     function changeState () {
+        if(!onChange) return
         setBtnState1(prevstate=>!prevstate)
         setBtnState2(prevstate=>!prevstate)
         
-        if(onChange) onChange()
+        onChange()
     }
 
     return (

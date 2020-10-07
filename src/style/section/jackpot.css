@@ -1,5 +1,6 @@
 .jackpot {
     padding: var(--vertical-space) 0;
+    width: var(--container-width);
 }
 .jackpot--first-part {
     display: flex;
@@ -13,5 +14,5 @@
 }
 .jackpot--container-infos {
     display: flex;
-    padding: 100px 0;
+    padding-top: 100px;
 }

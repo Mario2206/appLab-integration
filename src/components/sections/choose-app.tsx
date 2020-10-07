@@ -2,7 +2,7 @@ import * as React from 'react';
 import Description from '../items/description';
 import InfoPoints from '../items/info-points';
 import SecondTitle from '../items/second-title';
-import "../../style/choose-app.css"
+import "../../style/section/choose-app.css"
 
 const ChooseApp = ()=> {
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../style/click-button.css"
+import "../../style/items/click-button.css"
 
 const ClickButton = ({value} : {value : string}) => (
     <a href="#" className="click-button">

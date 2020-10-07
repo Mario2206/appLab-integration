@@ -1,0 +1,15 @@
+.questions {
+    padding: var(--vertical-space) 0;
+    width: var(--container-width);
+}
+.questions--head {
+    padding-bottom : 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 0 auto;
+}
+.questions--head--description {
+    text-align: center;
+}

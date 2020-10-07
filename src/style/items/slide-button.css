@@ -1,0 +1,39 @@
+.slide-button {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.slide-button--btn {
+    width: 3em;
+    height: 3em;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin: 0 15px;
+}
+.slide-button--btn_visible {
+    background-color: #eff3f8;
+}
+.slide-button--btn_hide {
+    background-color: transparent;
+    border: 2px solid #eff3f8;
+}
+.slide-button--btn:focus {
+    outline: none;
+}
+.slide-button--btn:hover {
+    cursor: pointer;
+}
+.slide-button--svg {
+    width: 1em;
+}
+.slide-button--svg_mirror {
+    transform: scaleX(-1);
+}
+.slide-button--delimiter {
+    transform: scaleY(0.6);
+    border: 0;
+    background-color: #e7e7e7;
+    width: 2px;
+}

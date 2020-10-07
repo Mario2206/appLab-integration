@@ -1,0 +1,24 @@
+.footer-background {
+    padding: 100px 0;
+    background-color: #09142e;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.footer-container {
+    width: var(--container-width);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-container--title {
+    padding-bottom: 40px;
+}
+.footer-container--links-group {
+    display: flex;
+    justify-content: space-around;
+    width: 45%;
+}
+.footer-container--links-group > li > a {
+    color: white;
+}

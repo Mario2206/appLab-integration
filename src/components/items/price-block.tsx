@@ -1,6 +1,6 @@
 import React from 'react';
 import ClickButton from './click-button';
-import "../../style/price-block.css"
+import "../../style/items/price-block.css"
 
 interface IEPriceBlock {
     keyPoints : Array<string>,
@@ -18,31 +18,31 @@ export default function PriceBlock ({keyPoints, price, period, title, descriptio
     const containerClassName = `price-block`
 
     return (
-        <table className={containerClassName} >
-            <thead className="price-block--head">
-                <tr>
-                   <th>
+        <div className={containerClassName} >
+            <div className="price-block--head">
+                <div>
+                   <div>
                         <strong className="price-block--price">${price}</strong>
                         <span className="price-block--negative-color">/{period}</span>        
-                    </th> 
-                </tr>
-                <tr>
-                    <th>
+                    </div> 
+                </div>
+                <div>
+                    <div>
                         <h3 className="price-block--title">{title}</h3>
                         <p className="price-block--negative-color">{description}</p>
-                    </th> 
-                </tr>
+                    </div> 
+                </div>
                 
-            </thead>
-            <tbody>
+            </div>
+            <div>
                 {keyPoints.map((item : string, index : number)=>(
-                    <tr className="price-block--negative-color price-block--keypoints" key={index}>
+                    <div className="price-block--negative-color price-block--keypoints" key={index}>
                         {item}
-                    </tr>
+                    </div>
                 ))}
-                <tr className="price-block--container-btn">
+                <div className="price-block--container-btn">
                     <ClickButton value={buttonVal} />
-                </tr>
+                </div>
                 <div className="price-block--container-annex-link">
                     {
                         annexLink && (
@@ -51,7 +51,7 @@ export default function PriceBlock ({keyPoints, price, period, title, descriptio
                     }   
                 </div>
                 
-            </tbody>
-        </table>
+            </div>
+        </div>
     )
 }

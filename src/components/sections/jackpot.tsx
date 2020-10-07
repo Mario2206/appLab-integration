@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Description from '../items/description';
 import SecondTitle from '../items/second-title';
-import '../../style/jackpot.css'
+import '../../style/section/jackpot.css'
 import InfoPoints from '../items/info-points';
 
 const Jackpot = ()=> {

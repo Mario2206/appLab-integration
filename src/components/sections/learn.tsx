@@ -3,7 +3,7 @@ import ClickButton from '../items/click-button';
 import Description from '../items/description';
 import SecondTitle from '../items/second-title';
 
-import "../../style/learn.css"
+import "../../style/section/learn.css"
 
 const Learn = ()=>{
     return (

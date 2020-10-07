@@ -3,7 +3,7 @@ import Description from '../items/description';
 import InfoPoints from '../items/info-points';
 import SecondTitle from '../items/second-title';
 
-import "../../style/ultimate-features.css"
+import "../../style/section/ultimate-features.css"
 import ClickButton from '../items/click-button';
 
 export default function UltimateFeatures () {

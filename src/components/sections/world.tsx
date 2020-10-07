@@ -3,26 +3,29 @@ import Description from '../items/description';
 import SecondTitle from '../items/second-title';
 import ThirdTitle from '../items/third-title';
 
+import "../../style/section/world.css"
+import SlideButton from '../items/slide-button';
+
 export default function World () {
 
     return (
         <section className="world">
-            <div>
-                <div className="word--container-img"></div>
+            <div className="world--map">
+                <div className="world--container-img"></div>
             </div>
-            <div>
-                <SecondTitle value="Meet Client Satisfaction by using product" />
+            <div className="world--container-comment">
+                <SecondTitle value="Meet Client Satisfaction by using product" className="world--main-title"/>
                 <Description>
                     The rise of mobile devices transforms the way we consume information entirely and the world's most
                     elevant channels such as Facebook.
                 </Description>
                 <div className="world--comment">
                     <div className="world--container-stars">
-                        <span className="world--star-items"></span>
-                        <span className="world--star-items"></span>
-                        <span className="world--star-items"></span>
-                        <span className="world--star-items"></span>
-                        <span className="world--star-items"></span>
+                        <img className="world--star-items" src="/img/star.svg"/>
+                        <img className="world--star-items" src="/img/star.svg"/>
+                        <img className="world--star-items" src="/img/star.svg"/>
+                        <img className="world--star-items" src="/img/star.svg"/>
+                        <img className="world--star-items" src="/img/star.svg"/>
                     </div>
                     <ThirdTitle value="User friendly & Customizalble" />
                     <Description>
@@ -32,14 +35,14 @@ export default function World () {
                         touchpoints for offshoring.
                     </Description>
                     <div className="world--portrait">
-                        <img src="" alt=""/>
-                        <div>
+                        <img src="/img/adult1.png" alt="adult"/>
+                        <div className="world--portrait--perso-info">
                             <span className="world--portrait-name">Zoltan Nemeth</span>
                             <span className="world--portrait-work">CEO of Pixer Lab</span>
                         </div>
                     </div>
-                </div>
-                
+                </div> 
+                <SlideButton className="world--slide-btn"/>            
             </div>
         </section>
     )

@@ -1,6 +1,6 @@
 import React from 'react';
 import ClickButton from './click-button';
-import "../../style/nav-bar.css"
+import "../../style/items/nav-bar.css"
 
 const NavBar = () => (
     <nav className="nav-bar">

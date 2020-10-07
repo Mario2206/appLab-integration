@@ -1,5 +1,5 @@
 import React from 'react';
-import "../../style/reward-banner.css"
+import "../../style/items/reward-banner.css"
 
 const RewardBanner = () => (
     <div className="reward-banner">

@@ -1,0 +1,52 @@
+.world {
+    display: flex;
+    padding: var(--vertical-space) 0;
+    width: var(--container-width);
+}
+.world--container-img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-image: url("/img/map.png");
+    left: 0;
+    background-size: contain;
+}
+.world--container-comment {
+    width: 50%;
+    position: relative;
+}
+.world--map{
+    width: 50%;
+}
+.world--main-title {
+    padding: 20px 0;
+}
+.world--container-stars {
+    padding: 20px 0;
+    width: 28%;
+}
+.world--star-items {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.world--portrait {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+.world--portrait--perso-info {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.world--portrait-name {
+    font-family: "poppins-bold";
+    color: var(--title-color2);
+}
+.world--slide-btn {
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+}

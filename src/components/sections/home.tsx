@@ -1,7 +1,7 @@
 import React from 'react';
 import MainTitle from '../items/main-title';
 import RewardBanner from '../items/reward-banner';
-import "../../style/home.css"
+import "../../style/section/home.css"
 import ClickButton from '../items/click-button';
 import Header from './header-container';
 import Description from '../items/description';

@@ -2,6 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: var(--vertical-space) 0;
+    width: var(--container-width);
 }
 .utlimate-features--left-part{
     width: 60%;

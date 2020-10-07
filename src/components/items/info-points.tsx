@@ -1,5 +1,5 @@
 import * as React from 'react';
-import "../../style/info-points.css"
+import "../../style/items/info-points.css"
 import Description from './description';
 import ThirdTitle from './third-title';
 

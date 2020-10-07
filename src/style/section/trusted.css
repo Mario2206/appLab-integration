@@ -1,6 +1,6 @@
 .trusted {
     padding: var(--vertical-space) 0;
-    width: 90%;
+    width: calc(var(--container-width) - 10%);
     margin: 0 auto;
 }
 .trusted--title {

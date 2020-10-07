@@ -1,6 +1,6 @@
 import * as React from 'react';
 import SecondTitle from '../items/second-title';
-import "../../style/features.css"
+import "../../style/section/features.css"
 import Description from '../items/description';
 import InfoPoints from '../items/info-points';
 

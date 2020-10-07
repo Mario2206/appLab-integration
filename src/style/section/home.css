@@ -1,3 +1,6 @@
+.container-home {
+    width: var(--container-width);
+} 
 .home {
     width: 91%;
     margin: 0 auto;  

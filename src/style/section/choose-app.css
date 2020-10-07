@@ -1,5 +1,6 @@
 .choose-app {
-    padding: 100px 0;
+    padding: var(--vertical-space) 0;
+    width: var(--container-width);
 }
 .choose-app--header {
     display: flex;

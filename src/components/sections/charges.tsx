@@ -4,7 +4,7 @@ import PriceBlock from '../items/price-block';
 import SecondTitle from '../items/second-title';
 import SwitchButton from '../items/switch-button';
 
-import "../../style/charges.css"
+import "../../style/section/charges.css"
 
 type BlockState = {
     currentBlock : number,
@@ -14,6 +14,7 @@ type BlockState = {
 export default function Charges () {
 
     const [blockState, setBlockState] = useState<BlockState>({currentBlock : 1, isVisible : true})
+    const [enable, setEnable] = useState(true)
 
     const animDuration = 1
     const fadeOutAnim = `blockFadeOut ${animDuration}s`
@@ -30,9 +31,10 @@ export default function Charges () {
     function changeBlock () {
         setBlockState((prevstate : BlockState)=>{
             const nextBlock = prevstate.currentBlock === 1 ? 2 : 1
-            
+            setEnable(false)
             setTimeout(()=> {
                 setBlockState({...prevstate, currentBlock : nextBlock})
+                setEnable(true)
             }, animDuration * 1000)
 
             return {...prevstate, isVisible : !prevstate.isVisible} 
@@ -50,7 +52,7 @@ export default function Charges () {
                 <SwitchButton
                 firstValue="Monthly"
                 secondValue="Annually"
-                onChange={changeBlock}
+                onChange={enable ? changeBlock : null}
                 />
             </div>
             {(blockState.currentBlock === 1) && 

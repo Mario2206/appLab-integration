@@ -1,6 +1,7 @@
 .learn {
     display: flex;
     padding: var(--vertical-space) 0;
+    width: var(--container-width);
 }
 .learn--presentation {
     width: 40%;
