@@ -1,6 +1,7 @@
 .ultimate-features {
     display: flex;
     flex-wrap: wrap;
+    padding: var(--vertical-space) 0;
 }
 .utlimate-features--left-part{
     width: 60%;

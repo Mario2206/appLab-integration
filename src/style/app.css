@@ -3,8 +3,10 @@
     --title-color2 : #242f51;
     --background-button : #2500f9;
     --description-color : #616368;
+    --annotation-color : #999ca5;
     --margin-border-size : 200px;
     --lg-break-points : 1600px;
+    --vertical-space : 100px;
 }
 * {
     margin: 0;
@@ -15,6 +17,7 @@
 }
 body{
     font-size: 90%;
+    scrollbar-width: 0;
 }
 #root {
     display: flex;
@@ -30,7 +33,13 @@ body{
     flex-direction: column;
     justify-content: space-around;
 }
-
+html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+body::-webkit-scrollbar {
+    display: none;
+}
 @font-face {
     font-family: "poppins-regular";
     src: url("/font/Poppins-Regular.ttf");

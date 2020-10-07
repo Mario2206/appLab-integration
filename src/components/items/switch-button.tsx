@@ -3,10 +3,11 @@ import "../../style/switch-button.css"
 
 interface IESwitchProps {
     firstValue : string,
-    secondValue : string
+    secondValue : string,
+    onChange? : ()=>void
 }
 
-export default function SwitchButton ({firstValue, secondValue} : IESwitchProps) {
+export default function SwitchButton ({firstValue, secondValue, onChange} : IESwitchProps) {
 
     const buttonSelectedClass = "switch-button--btn_selected"
     const buttonUnselectedClass = "switch-button--btn_unselected"
@@ -18,6 +19,8 @@ export default function SwitchButton ({firstValue, secondValue} : IESwitchProps)
     function changeState () {
         setBtnState1(prevstate=>!prevstate)
         setBtnState2(prevstate=>!prevstate)
+        
+        if(onChange) onChange()
     }
 
     return (

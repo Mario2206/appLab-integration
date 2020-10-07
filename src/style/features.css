@@ -1,6 +1,6 @@
 .features {
     display: flex;
-    padding: 100px 0;
+    padding: var(--vertical-space) 0;
 }
 .features--img-container {
     display: flex;

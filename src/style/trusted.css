@@ -1,5 +1,7 @@
 .trusted {
-    padding: 100px 100px;
+    padding: var(--vertical-space) 0;
+    width: 90%;
+    margin: 0 auto;
 }
 .trusted--title {
     text-align: center;

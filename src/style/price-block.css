@@ -1,0 +1,48 @@
+.price-block {
+    box-shadow: 0px 1px 50px 0px rgba(0, 0, 0, 0.2);
+    border-spacing: 0;
+    border-radius: 10px;
+}
+.price-block--head {
+    border-radius: 10px;
+    padding: 20px 50px;
+    display: inline-block;
+    background: linear-gradient(0deg,#f4f7f9 0%,#f4f7f9 80%, #ffffff 100%);
+}
+.price-block--price {
+    font-family: "poppins-bold";
+    font-size: 5em;
+    color : var(--title-color2)
+}
+.price-block--negative-color {
+    color: var(--annotation-color);
+    font-weight: normal;
+}
+.price-block--title {
+    font-family: "poppins-bold";
+    font-size: 1.2em;
+}
+.price-block--keypoints {
+    text-align: center;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.price-block--container-btn {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.price-block_selected {
+    transform: scale(1.1);
+}
+.price-block--container-annex-link {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+.price-block--annex-link {
+    color: var(--background-button);
+    font-weight: bold;
+}
