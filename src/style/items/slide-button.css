@@ -11,13 +11,15 @@
     align-items: center;
     border: none;
     margin: 0 15px;
-}
-.slide-button--btn_visible {
     background-color: #eff3f8;
+}
+.slide-button--btn path {
+    color : var(--background-button);   
 }
 .slide-button--btn_hide {
     background-color: transparent;
     border: 2px solid #eff3f8;
+    cursor: default!important;
 }
 .slide-button--btn:focus {
     outline: none;
@@ -25,11 +27,8 @@
 .slide-button--btn:hover {
     cursor: pointer;
 }
-.slide-button--svg {
-    width: 1em;
-}
-.slide-button--svg_mirror {
-    transform: scaleX(-1);
+.slide-button--btn_hide  path {
+    color : #dee1e6;
 }
 .slide-button--delimiter {
     transform: scaleY(0.6);

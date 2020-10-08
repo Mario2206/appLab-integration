@@ -22,3 +22,23 @@
 .footer-container--links-group > li > a {
     color: white;
 }
+.footer-container--logo {
+    padding: 50px 0;
+    display: flex;
+}
+.footer--icon-fb {
+    margin: 0 10px;
+}
+.footer--icon-fb path {
+    color : #273043;
+    width: 100px;
+    transition: .6s;
+}
+.footer--icon-fb:hover path {
+    color: white;
+}
+.footer--copyright {
+    font-style: normal;
+    color : #5f636e;
+    font-weight: bold;
+}

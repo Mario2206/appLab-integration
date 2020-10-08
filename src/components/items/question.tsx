@@ -9,7 +9,10 @@ export default function Question ({question, children} : {question : string, chi
     const [questionVisibility, setQuestionVisibility] = useState(false)
 
     function onClick () {
-        setQuestionVisibility(prevstate=>!prevstate)
+        setQuestionVisibility(prevstate=>{
+            return !prevstate
+        })
+
     }
     
     return (

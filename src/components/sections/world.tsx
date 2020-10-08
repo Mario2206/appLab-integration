@@ -1,12 +1,37 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Description from '../items/description';
 import SecondTitle from '../items/second-title';
-import ThirdTitle from '../items/third-title';
+import commentsData from "../../data/comments.json"
 
 import "../../style/section/world.css"
 import SlideButton from '../items/slide-button';
+import CommentBlock from '../items/comment-block';
+
+import anime from "animejs"
+import { worldBlockAnim,worldBlockAnimBack } from '../../animation/world-block-anim';
+
+type Direction = 1|-1|0 //1 for right, -1 for left, 0 for no direction
 
 export default function World () {
+
+    const [currentComment, setCurrentComment] = useState<number>(0)
+    const comment = commentsData[currentComment] ?? commentsData[0]
+
+    function incrementComment() {      
+        setCurrentComment((prevstate : number) => commentsData.length - 1 > prevstate ? prevstate + 1 : prevstate)
+    }
+
+    function decrementComment () {
+        setCurrentComment((prevstate : number) => prevstate > 0 ? prevstate - 1 : prevstate)   
+    }
+
+    function changeComment(dir : Direction) {
+        const timeLine = anime.timeline({
+            duration : 4000,
+        })
+        timeLine.add(worldBlockAnim(1500,dir, dir === 1 ? incrementComment : decrementComment ))
+        timeLine.add(worldBlockAnimBack(1500,dir === 1 ? -1 : 1,), 2000)
+    }
 
     return (
         <section className="world">
@@ -19,30 +44,21 @@ export default function World () {
                     The rise of mobile devices transforms the way we consume information entirely and the world's most
                     elevant channels such as Facebook.
                 </Description>
-                <div className="world--comment">
-                    <div className="world--container-stars">
-                        <img className="world--star-items" src="/img/star.svg"/>
-                        <img className="world--star-items" src="/img/star.svg"/>
-                        <img className="world--star-items" src="/img/star.svg"/>
-                        <img className="world--star-items" src="/img/star.svg"/>
-                        <img className="world--star-items" src="/img/star.svg"/>
-                    </div>
-                    <ThirdTitle value="User friendly & Customizalble" />
-                    <Description>
-                        Bring to the table win-win survival strategies to ensure proactive domination. At the end 
-                        of the day, going forward, a new normal that has evolved from generation X is on the runway 
-                        heading towards a streamlined cloud solution. User generated content in real-time will have multiple 
-                        touchpoints for offshoring.
-                    </Description>
-                    <div className="world--portrait">
-                        <img src="/img/adult1.png" alt="adult"/>
-                        <div className="world--portrait--perso-info">
-                            <span className="world--portrait-name">Zoltan Nemeth</span>
-                            <span className="world--portrait-work">CEO of Pixer Lab</span>
-                        </div>
-                    </div>
-                </div> 
-                <SlideButton className="world--slide-btn"/>            
+                <CommentBlock
+                className="world--comment"
+                title={comment.title}
+                starsNumber={comment.starsNumber}
+                commentary={comment.comment}
+                userName={comment.userName}
+                work={comment.work}
+                portrait={comment.portrait}
+                />
+                <SlideButton 
+                className="world--slide-btn" 
+                rightClick={()=>changeComment(1)}
+                leftClick={()=>changeComment(-1)}
+                enable={[currentComment === commentsData.length - 1 || currentComment > 0, currentComment < commentsData.length - 1]}
+                />            
             </div>
         </section>
     )

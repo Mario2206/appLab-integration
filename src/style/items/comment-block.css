@@ -1,0 +1,26 @@
+.comment--container-stars {
+    padding: 20px 0;
+    width: 28%;
+}
+.comment--star-items {
+    width: 20%;
+    box-sizing: border-box;
+    padding: 0 5px;
+}
+.comment--portrait {
+    display: flex;
+    align-items: center;
+    padding: 50px 0;
+}
+.comment--portrait--perso-info {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+}
+.comment--portrait-img {
+    width: 12%;
+}
+.comment--portrait-name {
+    font-family: "poppins-bold";
+    color: var(--title-color2);
+}
