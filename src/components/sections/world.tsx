@@ -8,6 +8,7 @@ import SlideButton from '../items/slide-button';
 import CommentBlock from '../items/comment-block';
 
 import anime from "animejs"
+
 import { worldBlockAnim,worldBlockAnimBack } from '../../animation/world-block-anim';
 
 type Direction = 1|-1|0 //1 for right, -1 for left, 0 for no direction
@@ -15,7 +16,10 @@ type Direction = 1|-1|0 //1 for right, -1 for left, 0 for no direction
 export default function World () {
 
     const [currentComment, setCurrentComment] = useState<number>(0)
+    const [changeCommentEnable, setChangeCommentEnable] = useState<boolean>(true)
+
     const comment = commentsData[currentComment] ?? commentsData[0]
+    const singleAnimDuration = 1500
 
     function incrementComment() {      
         setCurrentComment((prevstate : number) => commentsData.length - 1 > prevstate ? prevstate + 1 : prevstate)
@@ -26,17 +30,36 @@ export default function World () {
     }
 
     function changeComment(dir : Direction) {
+
+        if(!changeCommentEnable) return
+
+        setChangeCommentEnable(false)
+
         const timeLine = anime.timeline({
-            duration : 4000,
+            duration : singleAnimDuration * 2,
         })
-        timeLine.add(worldBlockAnim(1500,dir, dir === 1 ? incrementComment : decrementComment ))
-        timeLine.add(worldBlockAnimBack(1500,dir === 1 ? -1 : 1,), 2000)
+
+        timeLine.add(worldBlockAnim(singleAnimDuration,dir, dir === 1 ? incrementComment : decrementComment ))
+        
+        timeLine.add(worldBlockAnimBack(
+            singleAnimDuration,
+            dir === 1 ? -1 : 1, 
+            ()=>setChangeCommentEnable(true)), 
+            singleAnimDuration
+            )
     }
 
     return (
         <section className="world">
             <div className="world--map">
-                <div className="world--container-img"></div>
+                <div className="world--container-img">
+                    <img src="/img/adult2.png" alt="user" className="world--map-portrait-img"/>
+                    <img src="/img/adult3.png" alt="user" className="world--map-portrait-img"/>
+                    <img src="/img/3974.png" alt="user" className="world--map-portrait-img"/>
+                    <img src="/img/adult-beach-casual-736716.png" alt="user" className="world--map-portrait-img"/>
+                    <img src="/img/black-and-white-fun-good-looking-91227.png" alt="user" className="world--map-portrait-img"/>
+                    <img src="/img/adult1.png" alt="user" className="world--map-portrait-img"/>
+                </div>
             </div>
             <div className="world--container-comment">
                 <SecondTitle value="Meet Client Satisfaction by using product" className="world--main-title"/>

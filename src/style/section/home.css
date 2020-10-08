@@ -1,11 +1,18 @@
 .container-home {
     width: var(--container-width);
+    
 } 
 .home {
     width: 91%;
     margin: 0 auto;  
     display: flex; 
     justify-content: space-between;
+}
+.home--background-canvas {
+    position: absolute;
+    z-index: -1;
+    top : 0; 
+    left: 0;
 }
 .home--background {
     width: 100%;
