@@ -29,6 +29,7 @@
 }
 .world--map-portrait-img {
     position: absolute;
+    z-index: -1;
 }
 .world--map-portrait-img:nth-child(1) {
     right: 20%;
