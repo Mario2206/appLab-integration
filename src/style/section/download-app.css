@@ -37,7 +37,7 @@
     width: 100%;
 }
 .download-app--store:last-of-type {
-    padding-left: 4%;
+    margin-left: 4%;
 }
 
 @media screen and (max-width : 1050px) {
@@ -46,5 +46,13 @@
     }
     .download-app--img  {
         opacity: 0.5;
+    }
+}
+@media screen and (max-width : 450px) {
+    .download-app--container-text {
+        width: 100%;
+    }
+    .download-app--store {
+        width: 40%;
     }
 }

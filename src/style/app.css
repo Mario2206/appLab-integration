@@ -24,6 +24,7 @@ body{
     font-size: 90%;
     scrollbar-width: 0;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 #root {
     display: flex;
