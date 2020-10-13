@@ -14,7 +14,7 @@ const Home = () => {
     
     return (
     
-        <div className="container-section container-home">
+        <div className="container-section container-home" onPointerEnter = {()=>console.log("test")}>
             <Header />
             <BackgroundCanvas className="home--background-canvas" width={dimensions.width} height= {dimensions.height} />
             <section className = "home">

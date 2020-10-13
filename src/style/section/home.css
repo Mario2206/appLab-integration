@@ -46,3 +46,27 @@
 .home--img-part > img {
     width: 70%;
 }
+
+@media screen and (max-width : 1050px) {
+    .container-home {
+        width: 100%;
+        justify-content: center!important;
+    }
+    .home {
+        height: 90%;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .home--title-part {
+        width: 80%;
+    }
+}
+@media screen and (max-width : 450px) {
+    .home--img-part {
+        justify-content: center;
+        width: 60%;
+        position: relative;
+        bottom: 20px;
+    }
+}

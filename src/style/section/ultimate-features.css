@@ -36,3 +36,21 @@
     z-index: -1;
     bottom: 5%;
 }
+
+@media screen and (max-width : 1050px) {
+    .ultimate-features--container-title{
+        width: 80%;
+    }
+} 
+@media screen and (max-width : 750px) {
+    .ultimate-features--img-part {
+        display: none;
+    }
+    .ultimate-features {
+        flex-direction: column;
+        align-items: center;
+    }
+    .utlimate-features--left-part {
+        width: 100%;
+    }
+}

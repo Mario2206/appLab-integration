@@ -26,3 +26,9 @@
 .choose-app .info-points--description {
     text-align: center;
 }
+@media screen and (max-width : 450px) {
+    .choose-app--container-items {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}

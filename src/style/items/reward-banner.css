@@ -1,18 +1,15 @@
 .reward-banner {
-    --img-size : 1.2em;
-    display: flex;
-    align-items: center;
+    --img-size : 15px;
     background-color: #e2eaed;
     border-radius: 100px;
-    width: 60%;
+    display: inline-flex;
+    align-items: center;
 }
 .reward-banner--badge {
     display: inline-block;
-    min-width: var(--img-size);
-    max-height: var(--img-size);
     background-color: #feaa25;
     border-radius: 100px;
-    padding: 5px 7px;
+    padding: 5px 10px 0 10px;
 
 }
 .reward-banner--badge > img {
@@ -23,4 +20,10 @@
     height: 100%;
     font-size: 0.9em;
     padding: 0 40px 0 10px;
+}
+
+@media screen and (max-width : 450px) {
+    .reward-banner {
+        --img-size : 10px
+    }
 }

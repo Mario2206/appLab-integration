@@ -10,3 +10,14 @@
     margin: 0 15px;
     color: var(--title-color2);
 }
+
+@media screen and (max-width : 750px) {
+    .nav-bar {
+        width: 100%;
+        justify-content: space-around;
+    }
+    .nav-bar--container-items {
+        width: 40%;
+        overflow-x: scroll;
+    }
+}

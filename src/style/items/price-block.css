@@ -46,3 +46,12 @@
     color: var(--background-button);
     font-weight: bold;
 }
+
+@media screen and (max-width : 450px) {
+    .price-block {
+        width: 47%;
+    }
+    .price-block--head {
+        width: 100%;
+    }
+}

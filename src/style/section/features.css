@@ -4,8 +4,6 @@
     width: var(--container-width);
 }
 .features--img-container {
-    display: flex;
-    justify-content: center;
     width: 45%;
     position: relative;
     margin-right: 10%;
@@ -14,10 +12,10 @@
     position: absolute;
     background-color: #f4f4f5;
     width: 80% ;
-    height: 400px;
+    height: 300px;
     border-radius: 50px;
     z-index: -3;
-    bottom: 20%;
+    bottom: 100px;
     transform: rotate(120deg);
     
 }
@@ -28,15 +26,19 @@
     height: 300px;
     border-radius: 50px;
     z-index: -2;
-    bottom: 20%;
+    bottom: 50px;
     transform: rotate(-35deg); 
 }
 .features--ellipse-cover {
     position: absolute;
     z-index: -1;
+    max-width: 100%;
+    bottom: 30px;
 } 
 .features--phone-img {
-    width: 100%;
+    position: absolute;
+    width: 80%;
+    bottom: 0px;
 }
 .features--description {
     width: 45%;
@@ -44,4 +46,30 @@
 .features--container-features {
     padding: 30px 0;
     width: 70%;
+}
+@media screen and (max-width : 1050px) {
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .features--img-container {
+        margin: 0;
+        display: none;
+    }
+    .features--ellipse-1 {
+        width: 60%;
+        bottom: 0;
+    }
+    .features--ellipse-2 {
+        width: 40%;
+    }
+    .features--description {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

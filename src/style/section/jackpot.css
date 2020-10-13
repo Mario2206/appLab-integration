@@ -16,3 +16,12 @@
     display: flex;
     padding-top: 100px;
 }
+
+@media screen and (max-width : 450px) {
+    .jackpot--first-part {
+        width: 100%;
+    }
+    .jackpot--container-infos {
+        flex-direction: column;
+    }
+}

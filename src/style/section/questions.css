@@ -13,3 +13,13 @@
 .questions--head--description {
     text-align: center;
 }
+@media screen and (max-width : 1050px) {
+    .second-title {
+        text-align: center;
+    }
+}
+@media screen and (max-width : 450px) {
+    .questions {
+        width: 90%;
+    }
+}

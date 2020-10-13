@@ -7,9 +7,9 @@ import "../../style/section/learn.css"
 
 const Learn = ()=>{
     return (
-        <div className="learn">
+        <section className="learn">
             <div>
-                <img src="/img/smart-object.png" alt=""/>
+                <img src="/img/smart-object.png" alt="learn" className="learn--img"/>
             </div>
             <div className="learn--presentation">
                 <SecondTitle value="Designed & built by the latest code integration" />
@@ -19,7 +19,7 @@ const Learn = ()=>{
                 </Description>
                 <ClickButton value="Learn more" />
             </div>
-        </div>
+        </section>
     )
 }
 

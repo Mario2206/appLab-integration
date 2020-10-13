@@ -12,8 +12,9 @@
     width: 90%;
     margin: 0 auto;
     display: flex;
+    align-items: baseline;
     justify-content: space-around;
 }
 .trusted--items {
-    width: 8%;
+    width: 10%;
 }

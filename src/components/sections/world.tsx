@@ -11,7 +11,7 @@ import anime from "animejs"
 
 import { worldBlockAnim,worldBlockAnimBack } from '../../animation/world-block-anim';
 
-type Direction = 1|-1|0 //1 for right, -1 for left, 0 for no direction
+
 
 export default function World () {
 
@@ -29,7 +29,7 @@ export default function World () {
         setCurrentComment((prevstate : number) => prevstate > 0 ? prevstate - 1 : prevstate)   
     }
 
-    function changeComment(dir : Direction) {
+    function changeComment(dir : number) {
 
         if(!changeCommentEnable) return
 
@@ -39,11 +39,11 @@ export default function World () {
             duration : singleAnimDuration * 2,
         })
 
-        timeLine.add(worldBlockAnim(singleAnimDuration,dir, dir === 1 ? incrementComment : decrementComment ))
+        timeLine.add(worldBlockAnim(singleAnimDuration,dir, dir > 0 ? incrementComment : decrementComment ))
         
         timeLine.add(worldBlockAnimBack(
             singleAnimDuration,
-            dir === 1 ? -1 : 1, 
+            -dir, 
             ()=>setChangeCommentEnable(true)), 
             singleAnimDuration
             )

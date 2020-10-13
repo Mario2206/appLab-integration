@@ -13,10 +13,12 @@ const Features = () => (
             <img src="/img/phone2.png" alt="phone" className="features--phone-img"/>
         </div>
         <div className="features--description">
-            <SecondTitle value="Awesome apps features"/>
-            <Description>
-                Increase productivity with a simple to-do app, app for managing your personal budgets
-            </Description>
+            <div className="features--head">
+                <SecondTitle value="Awesome apps features"/>
+                <Description>
+                    Increase productivity with a simple to-do app, app for managing your personal budgets
+                </Description>
+            </div>
             <div className="features--container-features">
                 <InfoPoints 
                 imagePath="/img/performance.png" 

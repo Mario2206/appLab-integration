@@ -1,6 +1,6 @@
-type Direction = 1|-1|0 //1 for right, -1 for left, 0 for no direction
 
-export const worldBlockAnim = (duration : number,dir : Direction, onComplete? : ()=>void) : anime.AnimeAnimParams => (
+
+export const worldBlockAnim = (duration : number,dir : number, onComplete? : ()=>void) : anime.AnimeAnimParams => (
 {
         targets : ".world--comment",
         translateX: [
@@ -18,12 +18,13 @@ export const worldBlockAnim = (duration : number,dir : Direction, onComplete? : 
             {value : 1, duration : duration / 2},
             {value : 0, duration : duration / 2}
         ],
+        
         easing: 'easeInOutSine',
         autoplay : false,
         complete : onComplete
     }
 )
-export const worldBlockAnimBack = (duration : number,dir : Direction, onComplete? : ()=>void) : anime.AnimeAnimParams => (
+export const worldBlockAnimBack = (duration : number,dir : number, onComplete? : ()=>void) : anime.AnimeAnimParams => (
     {
             targets : ".world--comment",
             translateX: [

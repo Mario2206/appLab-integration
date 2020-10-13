@@ -17,13 +17,16 @@
     padding-bottom: 40px;
 }
 .download-app--container-img {
+    position: relative;
     width: 45%;
 }
 .download-app--img {
     right: 0;
-    width: 100%;
-    position: relative;
-    top: 6vh;
+    height: 250px;
+    width: 500px;
+    position: absolute;
+    bottom: -13%;
+    z-index: -1;
 }
 .download-app--store {
     width: 20%;
@@ -35,4 +38,13 @@
 }
 .download-app--store:last-of-type {
     padding-left: 4%;
+}
+
+@media screen and (max-width : 1050px) {
+    .download-app--store {
+        width: 30%;
+    }
+    .download-app--img  {
+        opacity: 0.5;
+    }
 }

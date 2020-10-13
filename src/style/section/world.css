@@ -1,19 +1,22 @@
+:root {
+    --factor : 1.1;
+}
 .world {
     display: flex;
     padding: var(--vertical-space) 0;
-    width: var(--container-width);
+    width: 100%;
 }
 .world--container-img {
-    position: absolute;
-    width: 50%;
-    height: 100%;
+    position: relative;
+    width: calc(900px * var(--factor));
+    height: calc(700px * var(--factor));
     background-repeat: no-repeat;
     background-image: url("/img/map.png");
     left: 0;
     background-size: contain;
 }
 .world--container-comment {
-    width: 50%;
+    width: 35%;
     position: relative;
 }
 .world--map{
@@ -32,32 +35,77 @@
     z-index: -1;
 }
 .world--map-portrait-img:nth-child(1) {
-    right: 20%;
-    top: 3%;
+    left: 5%;
+    top: 15% ;
     width: 5.5%;
 }
 .world--map-portrait-img:nth-child(2) {
-    left: 37%;
-    top: 20%;
+    left: 39%;
+    top: 30%;
     width: 8.5%;
 }
 .world--map-portrait-img:nth-child(3) {
-    left: 10%;
-    top: 27%;
+    left: 8%;
+    top: 40%;
     width: 10.5%;
+    z-index: 1;
 }
 .world--map-portrait-img:nth-child(4) {
     left: 30%;
-    top: 43%;
+    top: 63% ;
     width: 13.5%;
 }
 .world--map-portrait-img:nth-child(5) {
-    left: 59%;
-    top: 29%;
+    left: 60%;
+    top: 45%;
     width: 8.5%;
 }
 .world--map-portrait-img:nth-child(6) {
-    left: 3%;
-    top: 9%;
+    left: 72%;
+    top: 5%;
     width: 7%;
+}
+
+@media screen and (max-width : 1650px) {
+    :root {
+        --factor : calc(1 / 1.2);
+    }
+
+}
+@media screen and (max-width : 1400px) {
+    .world{
+        justify-content: space-between;
+    }
+    .world--container-comment {
+        margin-right:  20px;
+    }
+}
+@media screen and ( max-width : 1050px) {
+    .world {
+        flex-direction: column;
+        align-items: center;
+    }
+    .world--map {
+       margin-bottom: 60px;
+       align-self: start;
+    }
+    .world--container-comment {
+        flex: 1;
+        width: 70%;
+    }
+}
+@media screen and ( max-width : 750px) {
+    :root {
+        --factor : 1 / 1.6
+    }
+}
+@media screen and ( max-width : 600px) {
+    :root {
+        --factor : 1 / 2
+    }
+}
+@media screen and ( max-width : 450px) {
+    :root {
+        --factor : 1 / 2.3
+    }
 }
