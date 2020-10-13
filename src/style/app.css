@@ -76,11 +76,11 @@ body::-webkit-scrollbar {
 }
 
 @media screen and (max-width : 450px) {
+    :root {
+        --vertical-space : 90px;
+    }
     body {
         font-size: 50%;
         width: 100%;
-    }
-    .container-section {
-        /* height: auto; */
     }
 }

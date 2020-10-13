@@ -42,3 +42,9 @@
     color : #5f636e;
     font-weight: bold;
 }
+
+@media screen and (max-width : 700px) {
+    .footer-container--links-group {
+        width: 70%;
+    }
+}

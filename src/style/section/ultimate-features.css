@@ -9,7 +9,7 @@
 }
 .ultimate-features--container-title {
     width: 60%;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
 }
 .ultimate-features--container-info-points {
     display: grid;
@@ -38,8 +38,16 @@
 }
 
 @media screen and (max-width : 1050px) {
+    .utlimate-features--left-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .ultimate-features--container-title{
         width: 80%;
+    }
+    .utlimate-feature--head-description {
+        text-align: center;
     }
 } 
 @media screen and (max-width : 750px) {
@@ -49,6 +57,12 @@
     .ultimate-features {
         flex-direction: column;
         align-items: center;
+    }
+    .ultimate-features .info-points {
+        align-items: center!important;
+    }
+    .ultimate-features .info-points .info-points--text-column-container > * {
+        text-align: center;
     }
     .utlimate-features--left-part {
         width: 100%;

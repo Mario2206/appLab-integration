@@ -53,6 +53,7 @@ export default function World () {
         <section className="world">
             <div className="world--map">
                 <div className="world--container-img">
+                    <img src="/img/map.png" alt="" className="world--map-background"/>
                     <img src="/img/adult2.png" alt="user" className="world--map-portrait-img"/>
                     <img src="/img/adult3.png" alt="user" className="world--map-portrait-img"/>
                     <img src="/img/3974.png" alt="user" className="world--map-portrait-img"/>

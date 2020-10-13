@@ -85,7 +85,6 @@ const ChooseApp = ()=> {
                             Get your blood tests delivered at home collect a sample from the news your blood test
                 </InfoPoints>               
             </div>
-            <div className="choose-app--container-items"></div>
         </section>
     )
 }

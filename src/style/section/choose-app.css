@@ -14,11 +14,17 @@
     padding: 50px 0;
 }
 .choose-app--container-items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap : 15%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     padding: 50px 0;
+}
+.choose-app--container-items > * {
+    width: 30%;
+    padding: 40px 0;
+}
+.choose-app--container-items > * .third-title {
+    text-align: center;
 }
 .choose-app--container-items .info-points--title {
     text-align: center;
@@ -27,8 +33,10 @@
     text-align: center;
 }
 @media screen and (max-width : 450px) {
-    .choose-app--container-items {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+    .choose-app--header {
+        width: 80%;
+    }
+    .choose-app--container-items > * {
+        width: 45%;
     }
 }

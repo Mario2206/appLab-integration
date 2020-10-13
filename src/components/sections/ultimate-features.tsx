@@ -13,7 +13,7 @@ export default function UltimateFeatures () {
             <div className="utlimate-features--left-part">
                 <div className="ultimate-features--container-title">
                     <SecondTitle value="Ultimate features that we built"/>
-                    <Description>
+                    <Description className="utlimate-feature--head-description">
                         The rise of mobile devices transforms the way we consume information entirely.
                     </Description>
                 </div>
