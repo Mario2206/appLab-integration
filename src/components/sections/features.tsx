@@ -4,8 +4,8 @@ import "../../style/section/features.css"
 import Description from '../items/description';
 import InfoPoints from '../items/info-points';
 
-const Features = () => (
-    <section className="features">
+const Features = ({id} : {id : string}) => (
+    <section className="features" id={id || ""}>
         <div className="features--img-container">
             <div className="features--ellipse-1"></div>
             <div className="features--ellipse-2"></div>

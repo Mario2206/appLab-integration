@@ -1,5 +1,3 @@
-import { exception } from "console";
-
 class Circle {
     /**
      * Canvas ref

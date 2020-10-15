@@ -8,13 +8,13 @@ import Description from '../items/description';
 import BackgroundCanvas from '../items/background-canvas';
 import useWindowDimensions, { Dimensions } from '../../hooks/useWindowDimensions';
 
-const Home = () => {
+const Home = ({id} : {id : string}) => {
     
     const dimensions : Dimensions = useWindowDimensions()
     
     return (
     
-        <div className="container-section container-home" onPointerEnter = {()=>console.log("test")}>
+        <div className="container-section container-home" id={id || ""}>
             <Header />
             <BackgroundCanvas className="home--background-canvas" width={dimensions.width} height= {dimensions.height} />
             <section className = "home">

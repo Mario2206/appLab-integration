@@ -17,7 +17,7 @@
     padding-top: 100px;
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width : 600px) {
     .jackpot--first-part {
         width: 100%;
     }

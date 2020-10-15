@@ -11,13 +11,13 @@ type QuestionType = {
     response : string
 }
 
-export default function Questions () {
+export default function Questions ({id} : {id : string}) {
 
     const questions : Array<QuestionType> = questionsData
 
 
     return (
-        <section className="questions">
+        <section className="questions" id={id || ""}>
             <div className="questions--head">
                 <SecondTitle value="Frequently asked questions" />
                 <Description className="questions--head--description">

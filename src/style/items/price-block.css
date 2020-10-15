@@ -47,7 +47,16 @@
     font-weight: bold;
 }
 
-@media screen and (max-width : 450px) {
+@media screen and (max-width : 600px) {
+    .price-block--head {
+        padding: 20px 35px;
+    }
+}
+
+@media screen and (max-width : 480px) {
+    .price-block--head {
+        padding: 20px 20px;
+    }
     .price-block {
         width: 47%;
     }

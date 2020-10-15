@@ -13,7 +13,7 @@ import { worldBlockAnim,worldBlockAnimBack } from '../../animation/world-block-a
 
 
 
-export default function World () {
+export default function World ({id} : {id : string}) {
 
     const [currentComment, setCurrentComment] = useState<number>(0)
     const [changeCommentEnable, setChangeCommentEnable] = useState<boolean>(true)
@@ -62,7 +62,7 @@ export default function World () {
                     <img src="/img/adult1.png" alt="user" className="world--map-portrait-img"/>
                 </div>
             </div>
-            <div className="world--container-comment">
+            <div className="world--container-comment" id={id || ""}>
                 <SecondTitle value="Meet Client Satisfaction by using product" className="world--main-title"/>
                 <Description>
                     The rise of mobile devices transforms the way we consume information entirely and the world's most

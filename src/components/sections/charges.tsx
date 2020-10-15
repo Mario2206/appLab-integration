@@ -11,7 +11,7 @@ type BlockState = {
     isVisible : boolean
 }
 
-export default function Charges () {
+export default function Charges ({id} : {id : string}) {
 
     const [blockState, setBlockState] = useState<BlockState>({currentBlock : 1, isVisible : true})
     const [enable, setEnable] = useState(true)
@@ -42,7 +42,7 @@ export default function Charges () {
     }
 
     return (
-        <section className="charges">
+        <section className="charges" id={id || ""}>
             <div className="charges--head">
                 <SecondTitle value = "Get awesome features, without extra charges" />
                 <Description>
