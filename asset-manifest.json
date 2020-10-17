@@ -1,22 +1,40 @@
 {
   "files": {
-    "main.css": "/appLab-integration/static/css/main.5a4836c2.chunk.css",
-    "main.js": "/appLab-integration/static/js/main.83123e47.chunk.js",
-    "main.js.map": "/appLab-integration/static/js/main.83123e47.chunk.js.map",
+    "main.css": "/appLab-integration/static/css/main.854878b2.chunk.css",
+    "main.js": "/appLab-integration/static/js/main.216ee3c5.chunk.js",
+    "main.js.map": "/appLab-integration/static/js/main.216ee3c5.chunk.js.map",
     "runtime-main.js": "/appLab-integration/static/js/runtime-main.cd8ecb06.js",
     "runtime-main.js.map": "/appLab-integration/static/js/runtime-main.cd8ecb06.js.map",
-    "static/js/2.09750cc1.chunk.js": "/appLab-integration/static/js/2.09750cc1.chunk.js",
-    "static/js/2.09750cc1.chunk.js.map": "/appLab-integration/static/js/2.09750cc1.chunk.js.map",
+    "static/js/2.824de6dd.chunk.js": "/appLab-integration/static/js/2.824de6dd.chunk.js",
+    "static/js/2.824de6dd.chunk.js.map": "/appLab-integration/static/js/2.824de6dd.chunk.js.map",
     "index.html": "/appLab-integration/index.html",
-    "precache-manifest.57ef36de87f5b14fabbf48d3606c5063.js": "/appLab-integration/precache-manifest.57ef36de87f5b14fabbf48d3606c5063.js",
+    "precache-manifest.074729331b88090c049122e4c28304e6.js": "/appLab-integration/precache-manifest.074729331b88090c049122e4c28304e6.js",
     "service-worker.js": "/appLab-integration/service-worker.js",
-    "static/css/main.5a4836c2.chunk.css.map": "/appLab-integration/static/css/main.5a4836c2.chunk.css.map",
-    "static/js/2.09750cc1.chunk.js.LICENSE.txt": "/appLab-integration/static/js/2.09750cc1.chunk.js.LICENSE.txt"
+    "static/css/main.854878b2.chunk.css.map": "/appLab-integration/static/css/main.854878b2.chunk.css.map",
+    "static/js/2.824de6dd.chunk.js.LICENSE.txt": "/appLab-integration/static/js/2.824de6dd.chunk.js.LICENSE.txt",
+    "static/media/18653.png": "/appLab-integration/static/media/18653.c5c4434a.png",
+    "static/media/3974.png": "/appLab-integration/static/media/3974.3ae17441.png",
+    "static/media/app.css": "/appLab-integration/static/media/Poppins-SemiBold.4cdacb8f.ttf",
+    "static/media/adult-beach-casual-736716.png": "/appLab-integration/static/media/adult-beach-casual-736716.26b22601.png",
+    "static/media/adult1.png": "/appLab-integration/static/media/adult1.54b28d9e.png",
+    "static/media/adult3.png": "/appLab-integration/static/media/adult3.070c1e31.png",
+    "static/media/big-ellipse.png": "/appLab-integration/static/media/big-ellipse.545f8dfa.png",
+    "static/media/city.png": "/appLab-integration/static/media/city.7b4aa043.png",
+    "static/media/ellipse-cover.png": "/appLab-integration/static/media/ellipse-cover.b4720d14.png",
+    "static/media/ellipse.png": "/appLab-integration/static/media/ellipse.545f8dfa.png",
+    "static/media/map.png": "/appLab-integration/static/media/map.92c9633b.png",
+    "static/media/phone.png": "/appLab-integration/static/media/phone.d57b5c5c.png",
+    "static/media/phone2.png": "/appLab-integration/static/media/phone2.5aa8dc2f.png",
+    "static/media/phone4.png": "/appLab-integration/static/media/phone4.b38cdab2.png",
+    "static/media/phone5.png": "/appLab-integration/static/media/phone5.7c9adc96.png",
+    "static/media/right-arrow.svg": "/appLab-integration/static/media/right-arrow.a77cee3c.svg",
+    "static/media/smart-object.png": "/appLab-integration/static/media/smart-object.952ca7d5.png",
+    "static/media/star.svg": "/appLab-integration/static/media/star.c0210b84.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.cd8ecb06.js",
-    "static/js/2.09750cc1.chunk.js",
-    "static/css/main.5a4836c2.chunk.css",
-    "static/js/main.83123e47.chunk.js"
+    "static/js/2.824de6dd.chunk.js",
+    "static/css/main.854878b2.chunk.css",
+    "static/js/main.216ee3c5.chunk.js"
   ]
 }
