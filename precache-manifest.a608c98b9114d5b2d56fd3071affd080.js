@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a536fceb8384fea40595e3be93d2fe8f",
+    "revision": "20d3dd50192b69c1f6b3e12f15c6966c",
     "url": "/appLab-integration/index.html"
   },
   {
