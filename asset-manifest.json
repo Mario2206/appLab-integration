@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/app-lab/static/css/main.5a4836c2.chunk.css",
+    "main.js": "/app-lab/static/js/main.d74eff43.chunk.js",
+    "main.js.map": "/app-lab/static/js/main.d74eff43.chunk.js.map",
+    "runtime-main.js": "/app-lab/static/js/runtime-main.38f65005.js",
+    "runtime-main.js.map": "/app-lab/static/js/runtime-main.38f65005.js.map",
+    "static/js/2.09750cc1.chunk.js": "/app-lab/static/js/2.09750cc1.chunk.js",
+    "static/js/2.09750cc1.chunk.js.map": "/app-lab/static/js/2.09750cc1.chunk.js.map",
+    "index.html": "/app-lab/index.html",
+    "precache-manifest.631ca9f9f7396c5c8de58070e9d9bc44.js": "/app-lab/precache-manifest.631ca9f9f7396c5c8de58070e9d9bc44.js",
+    "service-worker.js": "/app-lab/service-worker.js",
+    "static/css/main.5a4836c2.chunk.css.map": "/app-lab/static/css/main.5a4836c2.chunk.css.map",
+    "static/js/2.09750cc1.chunk.js.LICENSE.txt": "/app-lab/static/js/2.09750cc1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38f65005.js",
+    "static/js/2.09750cc1.chunk.js",
+    "static/css/main.5a4836c2.chunk.css",
+    "static/js/main.d74eff43.chunk.js"
+  ]
+}
