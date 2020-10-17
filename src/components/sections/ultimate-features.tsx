@@ -19,7 +19,7 @@ export default function UltimateFeatures () {
                 </div>
                 <div className="ultimate-features--container-info-points">
                     <InfoPoints 
-                        imagePath="/img/web-design.png" 
+                        imagePath={require("../../assets/img/web-design.png" )}
                         color="#313b5b" 
                         backgroundColor="#ffecef" 
                         title="App Development"
@@ -30,7 +30,7 @@ export default function UltimateFeatures () {
                                 Get your blood tests delivered at home collect a sample from the news your blood test
                     </InfoPoints>
                     <InfoPoints 
-                        imagePath="/img/award.png" 
+                        imagePath={require("../../assets/img/award.png" )}
                         color="#313b5b" 
                         backgroundColor="#eaf9ff" 
                         title="App Development"
@@ -41,7 +41,7 @@ export default function UltimateFeatures () {
                                 Get your blood tests delivered at home collect a sample from the news your blood test
                     </InfoPoints> 
                     <InfoPoints 
-                        imagePath="/img/cloud.png" 
+                        imagePath={require("../../assets/img/cloud.png" )}
                         color="#313b5b" 
                         backgroundColor="#fff6d3" 
                         title="App Development"
@@ -52,7 +52,7 @@ export default function UltimateFeatures () {
                                 Get your blood tests delivered at home collect a sample from the news your blood test
                     </InfoPoints>               
                     <InfoPoints 
-                        imagePath="/img/custom.png" 
+                        imagePath={require("../../assets/img/custom.png" )}
                         color="#313b5b" 
                         backgroundColor="#e4ffee" 
                         title="App Development"
@@ -66,8 +66,8 @@ export default function UltimateFeatures () {
             </div>
             
             <div className="ultimate-features--img-part">
-                <img src="/img/phone4.png" alt="phone" className="ultimate-features--img ultimate-features--img_front"/>
-                <img src="/img/phone5.png" alt="phone" className="ultimate-features--img ultimate-features--img_back"/>
+                <img src={require("../../assets/img/phone4.png")} alt="phone" className="ultimate-features--img ultimate-features--img_front"/>
+                <img src={require("../../assets/img/phone5.png")} alt="phone" className="ultimate-features--img ultimate-features--img_back"/>
             </div>
            
             <div>

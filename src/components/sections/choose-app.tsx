@@ -19,7 +19,7 @@ const ChooseApp = ()=> {
             </div>
             <div className="choose-app--container-items">
                 <InfoPoints 
-                    imagePath="/img/web-design.png" 
+                    imagePath={require("../../assets/img/web-design.png")} 
                     color="#313b5b" 
                     backgroundColor="#ffecef" 
                     title="App Development"
@@ -30,7 +30,7 @@ const ChooseApp = ()=> {
                             Get your blood tests delivered at home collect a sample from the news your blood test
                 </InfoPoints>
                 <InfoPoints 
-                    imagePath="/img/award.png" 
+                    imagePath={require("../../assets/img/award.png" )}
                     color="#313b5b" 
                     backgroundColor="#eaf9ff" 
                     title="App Development"
@@ -41,7 +41,7 @@ const ChooseApp = ()=> {
                             Get your blood tests delivered at home collect a sample from the news your blood test
                 </InfoPoints> 
                 <InfoPoints 
-                    imagePath="/img/cloud.png" 
+                    imagePath={require("../../assets/img/cloud.png" )}
                     color="#313b5b" 
                     backgroundColor="#fff6d3" 
                     title="App Development"
@@ -52,7 +52,7 @@ const ChooseApp = ()=> {
                             Get your blood tests delivered at home collect a sample from the news your blood test
                 </InfoPoints>               
                 <InfoPoints 
-                    imagePath="/img/custom.png" 
+                    imagePath={require("../../assets/img/custom.png" )}
                     color="#313b5b" 
                     backgroundColor="#e4ffee" 
                     title="App Development"
@@ -63,7 +63,7 @@ const ChooseApp = ()=> {
                             Get your blood tests delivered at home collect a sample from the news your blood test
                 </InfoPoints>
                 <InfoPoints 
-                    imagePath="/img/ux.png" 
+                    imagePath={require("../../assets/img/ux.png")} 
                     color="#313b5b" 
                     backgroundColor="#f4f4ff" 
                     title="App Development"
@@ -74,7 +74,7 @@ const ChooseApp = ()=> {
                             Get your blood tests delivered at home collect a sample from the news your blood test
                 </InfoPoints> 
                 <InfoPoints 
-                    imagePath="/img/support.png" 
+                    imagePath={require("../../assets/img/support.png" )}
                     color="#313b5b" 
                     backgroundColor="#fdeee4" 
                     title="App Development"

@@ -20,7 +20,7 @@ const Jackpot = ()=> {
             </div>
             <div className="jackpot--container-infos">
                     <InfoPoints 
-                    imagePath="/img/automatic.png" 
+                    imagePath={require("../../assets/img/automatic.png" )}
                     color="#f55767" 
                     backgroundColor="#ffecef" 
                     title="Automatic Payouts"
@@ -32,7 +32,7 @@ const Jackpot = ()=> {
                         Get your blood tests delivered at home collect a sample from the news your blood test
                     </InfoPoints>
                     <InfoPoints 
-                    imagePath="/img/network.png" 
+                    imagePath={require("../../assets/img/network.png" )}
                     color="#2563ff" 
                     backgroundColor="#f4f4ff" 
                     title="Network Effect"
@@ -43,7 +43,7 @@ const Jackpot = ()=> {
                         Get your blood tests delivered at home collect a sample from the news your blood test
                     </InfoPoints>
                     <InfoPoints 
-                    imagePath="/img/reward.png" 
+                    imagePath={require("../../assets/img/reward.png" )}
                     color="#40975f" 
                     backgroundColor="#e4ffee" 
                     title="Bigger Rewards Method"

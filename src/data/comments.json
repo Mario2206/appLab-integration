@@ -3,7 +3,7 @@
         "starsNumber" : 5,
         "title" : "User friendly & Customizalble",
         "comment" : "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
-        "portrait" : "/img/adult1.png",
+        "portrait" : "adult1.png",
         "userName" : "Zoltan Nemeth",
         "work" : "CEO of Pixer Lab"
     },
@@ -11,7 +11,7 @@
         "starsNumber" : 4,
         "title" : "Interesting",
         "comment" : "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
-        "portrait" : "/img/18653.png",
+        "portrait" : "18653.png",
         "userName" : "Stella",
         "work" : "Marketing"
     },
@@ -19,7 +19,7 @@
         "starsNumber" : 4,
         "title" : "Great Idea !!",
         "comment" : "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
-        "portrait" : "/img/3974.png",
+        "portrait" : "3974.png",
         "userName" : "Marge",
         "work" : "Web designer"
     },
@@ -27,7 +27,7 @@
         "starsNumber" : 5,
         "title" : "Very useful",
         "comment" : "Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.",
-        "portrait" : "/img/adult-beach-casual-736716.png",
+        "portrait" : "adult-beach-casual-736716.png",
         "userName" : "Francis",
         "work" : "Teacher"
     }

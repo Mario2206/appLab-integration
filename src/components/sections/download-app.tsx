@@ -15,15 +15,15 @@ export default function DownloadApp () {
                 </Description>
                 <div className="download-app--container-dl">
                     <a href="#" className="download-app--store">
-                        <img src="/img/google-store.png" alt="google store"/>
+                        <img src={require("../../assets/img/google-store.png")} alt="google store"/>
                     </a>
                     <a href="#" className="download-app--store">
-                        <img src="/img/app-store.png" alt="app store"/>
+                        <img src={require("../../assets/img/app-store.png")} alt="app store"/>
                     </a>
                 </div>
             </div>
             <div className="download-app--container-img">
-                <img src="/img/city.png" alt="city" className="download-app--img"/>
+                <img src={require("../../assets/img/city.png")} alt="city" className="download-app--img"/>
             </div>          
         </section>
     )

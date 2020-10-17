@@ -53,15 +53,15 @@ body::-webkit-scrollbar {
 
 @font-face {
     font-family: "poppins-regular";
-    src: url("/font/Poppins-Regular.ttf");
+    src: url("../assets/font/Poppins-Regular.ttf");
 }
 @font-face {
     font-family: "poppins-bold";
-    src: url("/font/Poppins-Bold.ttf");
+    src: url("../assets/font/Poppins-Bold.ttf");
 }
 @font-face {
     font-family: "poppins-semi-bold";
-    src: url("/font/poppins-SemiBold.ttf");
+    src: url("../assets/font/Poppins-SemiBold.ttf");
 }
 
 @media screen and (max-width : 1600px ) {

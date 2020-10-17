@@ -19,7 +19,7 @@ const Home = () => {
             <Header />
             <BackgroundCanvas className="home--background-canvas" width={dimensions.width} height= {dimensions.height} />
             <section className = "home">
-                <img src="/img/buildings.png" alt="" className="home--background"/>
+                <img src={require("../../assets/img/buildings.png")} alt="" className="home--background"/>
                 <div className="home--title-part">
                     <RewardBanner />
                     <MainTitle value="Best app for your modern lifestyle"/>
@@ -32,7 +32,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="home--img-part">
-                    <img src="/img/phone.png" alt=""/>
+                    <img src={require("../../assets/img/phone.png")} alt=""/>
                 </div>
             </section>
         </div>

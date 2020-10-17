@@ -54,13 +54,13 @@ export default function World () {
         <section className="world" id={scrollViews.TESTIMINICAL}>
             <div className="world--map">
                 <div className="world--container-img">
-                    <img src="/img/map.png" alt="" className="world--map-background"/>
-                    <img src="/img/adult2.png" alt="user" className="world--map-portrait-img"/>
-                    <img src="/img/adult3.png" alt="user" className="world--map-portrait-img"/>
-                    <img src="/img/3974.png" alt="user" className="world--map-portrait-img"/>
-                    <img src="/img/adult-beach-casual-736716.png" alt="user" className="world--map-portrait-img"/>
-                    <img src="/img/black-and-white-fun-good-looking-91227.png" alt="user" className="world--map-portrait-img"/>
-                    <img src="/img/adult1.png" alt="user" className="world--map-portrait-img"/>
+                    <img src={require("../../assets/img/map.png")} alt="" className="world--map-background"/>
+                    <img src={require("../../assets/img/adult2.png")} alt="user" className="world--map-portrait-img"/>
+                    <img src={require("../../assets/img/adult3.png")} alt="user" className="world--map-portrait-img"/>
+                    <img src={require("../../assets/img/3974.png")} alt="user" className="world--map-portrait-img"/>
+                    <img src={require("../../assets/img/adult-beach-casual-736716.png")} alt="user" className="world--map-portrait-img"/>
+                    <img src={require("../../assets/img/black-and-white-fun-good-looking-91227.png")} alt="user" className="world--map-portrait-img"/>
+                    <img src={require("../../assets/img/adult1.png")} alt="user" className="world--map-portrait-img"/>
                 </div>
             </div>
             <div className="world--container-comment">
@@ -76,7 +76,7 @@ export default function World () {
                 commentary={comment.comment}
                 userName={comment.userName}
                 work={comment.work}
-                portrait={comment.portrait}
+                portrait={require("../../assets/img/"+comment.portrait)}
                 />
                 <SlideButton 
                 className="world--slide-btn" 

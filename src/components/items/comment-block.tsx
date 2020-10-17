@@ -32,7 +32,7 @@ export default function CommentBlock ({
         const stars : Array<ReactChild> = []
 
         for(let i = 0; i < starsNumber; i++) {
-            stars.push(<img className="comment--star-items" src="/img/star.svg" key={i} alt="star"/>)
+            stars.push(<img className="comment--star-items" src={require("../../assets/img/star.svg")} key={i} alt="star"/>)
         }
 
         return stars

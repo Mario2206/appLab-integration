@@ -9,7 +9,7 @@ const Learn = ()=>{
     return (
         <section className="learn">
             <div>
-                <img src="/img/smart-object.png" alt="learn" className="learn--img"/>
+                <img src={require("../../assets/img/smart-object.png")} alt="learn" className="learn--img"/>
             </div>
             <div className="learn--presentation">
                 <SecondTitle value="Designed & built by the latest code integration" />
