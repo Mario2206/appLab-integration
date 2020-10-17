@@ -2,8 +2,9 @@ import React from 'react';
 import CompanyTitle from '../items/company-title';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import "../../style/section/footer.css"
-import { scrollViews } from '../../App';
+import { scrollViews } from "../../bin/scroll-params";
 import { Link } from 'react-scroll';
+import { ScrollLinkComponent } from '../items/scroll-link';
 
 export default function Footer () {
 
@@ -15,19 +16,19 @@ export default function Footer () {
                 <CompanyTitle className="footer-container--title"/>
                 <ul className="footer-container--links-group">
                     <li>
-                        <Link to={scrollViews.HOME} duration={SCROLL_DURATION} smooth={true}>Home</Link>
+                        <ScrollLinkComponent to={scrollViews.HOME}>Home</ScrollLinkComponent>
                     </li>
                     <li>
-                        <Link to={scrollViews.KEY_FEATURES} duration={SCROLL_DURATION} smooth={true}>Key Features</Link>
+                        <ScrollLinkComponent to={scrollViews.KEY_FEATURES}>Key Features</ScrollLinkComponent>
                     </li>
                     <li>
-                        <Link to={scrollViews.PRICING} duration={SCROLL_DURATION} smooth={true}>Pricing</Link>
+                        <ScrollLinkComponent to={scrollViews.PRICING}>Pricing</ScrollLinkComponent>
                     </li>
                     <li>
-                        <Link to={scrollViews.TESTIMINICAL} duration={SCROLL_DURATION} smooth={true}>Testiminial</Link>
+                        <ScrollLinkComponent to={scrollViews.TESTIMINICAL}>Testiminial</ScrollLinkComponent>
                     </li>
                     <li>
-                        <Link to={scrollViews.FAQ} duration={SCROLL_DURATION} smooth={true}>FAQ</Link>
+                        <ScrollLinkComponent to={scrollViews.FAQ}>FAQ</ScrollLinkComponent>
                     </li>
                 </ul>
                 <ul className="footer-container--logo">

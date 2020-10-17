@@ -5,19 +5,20 @@ import SecondTitle from '../items/second-title';
 
 import questionsData from "../../data/questions.json"
 import "../../style/section/questions.css"
+import { scrollViews } from '../../bin/scroll-params';
 
 type QuestionType = {
     question : string, 
     response : string
 }
 
-export default function Questions ({id} : {id : string}) {
+export default function Questions () {
 
     const questions : Array<QuestionType> = questionsData
 
 
     return (
-        <section className="questions" id={id || ""}>
+        <section className="questions" id={scrollViews.FAQ}>
             <div className="questions--head">
                 <SecondTitle value="Frequently asked questions" />
                 <Description className="questions--head--description">

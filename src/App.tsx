@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import Charges from './components/sections/charges';
 import ChooseApp from './components/sections/choose-app';
 import DownloadApp from './components/sections/download-app';
@@ -13,48 +13,22 @@ import UltimateFeatures from './components/sections/ultimate-features';
 import World from './components/sections/world';
 import "./style/app.css";
 
-import {Events, scrollSpy} from "react-scroll"
-
-export const scrollViews = {
-  HOME : "home",
-  KEY_FEATURES : "key-features",
-  PRICING : "pricing",
-  TESTIMINICAL : "testiminical",
-  FAQ : "faq"
-}
 
 function App() {
-
-  useEffect(()=>{
-
-      Events.scrollEvent.register("begin", ()=>{
-        console.log("begin");
-        
-      })
-
-      Events.scrollEvent.register("end", ()=> {
-        console.log("end");
-        
-      })
-
-      scrollSpy.update()
-
-  }, [])
-
   
 
   return (
     <div className="main-container">
-      <Home id={scrollViews.HOME}/>
+      <Home/>
       <Trusted/>
-      <Features id={scrollViews.KEY_FEATURES}/>
+      <Features/>
       <Jackpot/>
       <Learn/>
       <ChooseApp />
       <UltimateFeatures />
-      <Charges id={scrollViews.PRICING} />
-      <World id={scrollViews.TESTIMINICAL}/>
-      <Questions id={scrollViews.FAQ}/>
+      <Charges/>
+      <World/>
+      <Questions/>
       <DownloadApp/>
       <Footer/>
     </div>

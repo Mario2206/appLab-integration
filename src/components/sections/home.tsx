@@ -7,14 +7,15 @@ import Header from './header-container';
 import Description from '../items/description';
 import BackgroundCanvas from '../items/background-canvas';
 import useWindowDimensions, { Dimensions } from '../../hooks/useWindowDimensions';
+import { scrollViews } from '../../bin/scroll-params';
 
-const Home = ({id} : {id : string}) => {
+const Home = () => {
     
     const dimensions : Dimensions = useWindowDimensions()
     
     return (
     
-        <div className="container-section container-home" id={id || ""}>
+        <div className="container-section container-home" id={scrollViews.HOME}>
             <Header />
             <BackgroundCanvas className="home--background-canvas" width={dimensions.width} height= {dimensions.height} />
             <section className = "home">

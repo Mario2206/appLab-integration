@@ -3,9 +3,10 @@ import SecondTitle from '../items/second-title';
 import "../../style/section/features.css"
 import Description from '../items/description';
 import InfoPoints from '../items/info-points';
+import { scrollViews } from '../../bin/scroll-params';
 
-const Features = ({id} : {id : string}) => (
-    <section className="features" id={id || ""}>
+const Features = () => (
+    <section className="features" id={scrollViews.KEY_FEATURES}>
         <div className="features--img-container">
             <div className="features--ellipse-1"></div>
             <div className="features--ellipse-2"></div>
@@ -19,7 +20,7 @@ const Features = ({id} : {id : string}) => (
                     Increase productivity with a simple to-do app, app for managing your personal budgets
                 </Description>
             </div>
-            <div className="features--container-features">
+            <div className="features--container-features" >
                 <InfoPoints 
                 imagePath="/img/performance.png" 
                 color="#f55767" 

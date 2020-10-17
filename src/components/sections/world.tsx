@@ -10,10 +10,11 @@ import CommentBlock from '../items/comment-block';
 import anime from "animejs"
 
 import { worldBlockAnim,worldBlockAnimBack } from '../../animation/world-block-anim';
+import { scrollViews } from '../../bin/scroll-params';
 
 
 
-export default function World ({id} : {id : string}) {
+export default function World () {
 
     const [currentComment, setCurrentComment] = useState<number>(0)
     const [changeCommentEnable, setChangeCommentEnable] = useState<boolean>(true)
@@ -50,7 +51,7 @@ export default function World ({id} : {id : string}) {
     }
 
     return (
-        <section className="world">
+        <section className="world" id={scrollViews.TESTIMINICAL}>
             <div className="world--map">
                 <div className="world--container-img">
                     <img src="/img/map.png" alt="" className="world--map-background"/>
@@ -62,7 +63,7 @@ export default function World ({id} : {id : string}) {
                     <img src="/img/adult1.png" alt="user" className="world--map-portrait-img"/>
                 </div>
             </div>
-            <div className="world--container-comment" id={id || ""}>
+            <div className="world--container-comment">
                 <SecondTitle value="Meet Client Satisfaction by using product" className="world--main-title"/>
                 <Description>
                     The rise of mobile devices transforms the way we consume information entirely and the world's most

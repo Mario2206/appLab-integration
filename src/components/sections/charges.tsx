@@ -5,13 +5,14 @@ import SecondTitle from '../items/second-title';
 import SwitchButton from '../items/switch-button';
 
 import "../../style/section/charges.css"
+import { scrollViews } from '../../bin/scroll-params';
 
 type BlockState = {
     currentBlock : number,
     isVisible : boolean
 }
 
-export default function Charges ({id} : {id : string}) {
+export default function Charges () {
 
     const [blockState, setBlockState] = useState<BlockState>({currentBlock : 1, isVisible : true})
     const [enable, setEnable] = useState(true)
@@ -42,7 +43,7 @@ export default function Charges ({id} : {id : string}) {
     }
 
     return (
-        <section className="charges" id={id || ""}>
+        <section className="charges" id={scrollViews.PRICING}>
             <div className="charges--head">
                 <SecondTitle value = "Get awesome features, without extra charges" />
                 <Description>
