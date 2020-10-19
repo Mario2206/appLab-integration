@@ -1,0 +1,7 @@
+.fade-box {
+    opacity: 0;
+}
+.fade-box_visible {
+    transition: 1.5s;
+    opacity: 1;
+}
