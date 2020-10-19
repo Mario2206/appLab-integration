@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "20d3dd50192b69c1f6b3e12f15c6966c",
+    "revision": "4da628b6881a7d0c55bb068ca149d001",
     "url": "/appLab-integration/index.html"
   },
   {
-    "revision": "acad85719991703f7b47",
+    "revision": "2ecbb0bab3514a34dce8",
     "url": "/appLab-integration/static/css/main.854878b2.chunk.css"
   },
   {
-    "revision": "fdff70fd536eb5f4de0f",
-    "url": "/appLab-integration/static/js/2.824de6dd.chunk.js"
+    "revision": "07aab61d9e43af88e3ef",
+    "url": "/appLab-integration/static/js/2.a8c8987d.chunk.js"
   },
   {
     "revision": "0d6c4affe2a659999d44765f9a17cb4f",
-    "url": "/appLab-integration/static/js/2.824de6dd.chunk.js.LICENSE.txt"
+    "url": "/appLab-integration/static/js/2.a8c8987d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "acad85719991703f7b47",
-    "url": "/appLab-integration/static/js/main.216ee3c5.chunk.js"
+    "revision": "2ecbb0bab3514a34dce8",
+    "url": "/appLab-integration/static/js/main.a42208da.chunk.js"
   },
   {
     "revision": "ec6a6133324640188a88",
