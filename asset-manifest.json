@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/appLab-integration/static/css/main.854878b2.chunk.css",
-    "main.js": "/appLab-integration/static/js/main.a42208da.chunk.js",
-    "main.js.map": "/appLab-integration/static/js/main.a42208da.chunk.js.map",
+    "main.css": "/appLab-integration/static/css/main.c5b43650.chunk.css",
+    "main.js": "/appLab-integration/static/js/main.f71517b7.chunk.js",
+    "main.js.map": "/appLab-integration/static/js/main.f71517b7.chunk.js.map",
     "runtime-main.js": "/appLab-integration/static/js/runtime-main.cd8ecb06.js",
     "runtime-main.js.map": "/appLab-integration/static/js/runtime-main.cd8ecb06.js.map",
-    "static/js/2.a8c8987d.chunk.js": "/appLab-integration/static/js/2.a8c8987d.chunk.js",
-    "static/js/2.a8c8987d.chunk.js.map": "/appLab-integration/static/js/2.a8c8987d.chunk.js.map",
+    "static/js/2.17350ae6.chunk.js": "/appLab-integration/static/js/2.17350ae6.chunk.js",
+    "static/js/2.17350ae6.chunk.js.map": "/appLab-integration/static/js/2.17350ae6.chunk.js.map",
     "index.html": "/appLab-integration/index.html",
-    "precache-manifest.e211307190163568b39f2e72175bbe07.js": "/appLab-integration/precache-manifest.e211307190163568b39f2e72175bbe07.js",
+    "precache-manifest.106cb15051b9bb594ec21a9e02d44b4e.js": "/appLab-integration/precache-manifest.106cb15051b9bb594ec21a9e02d44b4e.js",
     "service-worker.js": "/appLab-integration/service-worker.js",
-    "static/css/main.854878b2.chunk.css.map": "/appLab-integration/static/css/main.854878b2.chunk.css.map",
-    "static/js/2.a8c8987d.chunk.js.LICENSE.txt": "/appLab-integration/static/js/2.a8c8987d.chunk.js.LICENSE.txt",
+    "static/css/main.c5b43650.chunk.css.map": "/appLab-integration/static/css/main.c5b43650.chunk.css.map",
+    "static/js/2.17350ae6.chunk.js.LICENSE.txt": "/appLab-integration/static/js/2.17350ae6.chunk.js.LICENSE.txt",
     "static/media/18653.png": "/appLab-integration/static/media/18653.c5c4434a.png",
     "static/media/3974.png": "/appLab-integration/static/media/3974.3ae17441.png",
     "static/media/app.css": "/appLab-integration/static/media/Poppins-SemiBold.4cdacb8f.ttf",
@@ -33,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.cd8ecb06.js",
-    "static/js/2.a8c8987d.chunk.js",
-    "static/css/main.854878b2.chunk.css",
-    "static/js/main.a42208da.chunk.js"
+    "static/js/2.17350ae6.chunk.js",
+    "static/css/main.c5b43650.chunk.css",
+    "static/js/main.f71517b7.chunk.js"
   ]
 }
