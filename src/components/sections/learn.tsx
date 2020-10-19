@@ -4,10 +4,11 @@ import Description from '../items/description';
 import SecondTitle from '../items/second-title';
 
 import "../../style/section/learn.css"
+import FadeBox from '../items/fade-box';
 
 const Learn = ()=>{
     return (
-        <section className="learn">
+        <FadeBox className="learn">
             <div>
                 <img src={require("../../assets/img/smart-object.png")} alt="learn" className="learn--img"/>
             </div>
@@ -19,7 +20,7 @@ const Learn = ()=>{
                 </Description>
                 <ClickButton value="Learn more" />
             </div>
-        </section>
+        </FadeBox>
     )
 }
 

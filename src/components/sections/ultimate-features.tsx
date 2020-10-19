@@ -5,11 +5,12 @@ import SecondTitle from '../items/second-title';
 
 import "../../style/section/ultimate-features.css"
 import ClickButton from '../items/click-button';
+import FadeBox from '../items/fade-box';
 
 export default function UltimateFeatures () {
 
     return (
-        <section className="ultimate-features">
+        <FadeBox className="ultimate-features">
             <div className="utlimate-features--left-part">
                 <div className="ultimate-features--container-title">
                     <SecondTitle value="Ultimate features that we built"/>
@@ -73,6 +74,6 @@ export default function UltimateFeatures () {
             <div>
                 <ClickButton value="See all" />
             </div>
-        </section>
+        </FadeBox>
     )
 } 

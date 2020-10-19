@@ -6,6 +6,7 @@ import SwitchButton from '../items/switch-button';
 
 import "../../style/section/charges.css"
 import { scrollViews } from '../../bin/scroll-params';
+import FadeBox from '../items/fade-box';
 
 type BlockState = {
     currentBlock : number,
@@ -43,7 +44,7 @@ export default function Charges () {
     }
 
     return (
-        <section className="charges" id={scrollViews.PRICING}>
+        <FadeBox className="charges" id={scrollViews.PRICING}>
             <div className="charges--head">
                 <SecondTitle value = "Get awesome features, without extra charges" />
                 <Description>
@@ -107,6 +108,6 @@ export default function Charges () {
                 )
             }
             
-        </section>
+        </FadeBox>
     )
 }

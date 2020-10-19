@@ -6,6 +6,7 @@ import SecondTitle from '../items/second-title';
 import questionsData from "../../data/questions.json"
 import "../../style/section/questions.css"
 import { scrollViews } from '../../bin/scroll-params';
+import FadeBox from '../items/fade-box';
 
 type QuestionType = {
     question : string, 
@@ -18,7 +19,7 @@ export default function Questions () {
 
 
     return (
-        <section className="questions" id={scrollViews.FAQ}>
+        <FadeBox className="questions" id={scrollViews.FAQ}>
             <div className="questions--head">
                 <SecondTitle value="Frequently asked questions" />
                 <Description className="questions--head--description">
@@ -34,6 +35,6 @@ export default function Questions () {
                 ))}
                 
             </div>
-        </section>
+        </FadeBox>
     )
 }

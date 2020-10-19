@@ -4,9 +4,10 @@ import "../../style/section/features.css"
 import Description from '../items/description';
 import InfoPoints from '../items/info-points';
 import { scrollViews } from '../../bin/scroll-params';
+import FadeBox from '../items/fade-box';
 
 const Features = () => (
-    <section className="features" id={scrollViews.KEY_FEATURES}>
+    <FadeBox className="features" id={scrollViews.KEY_FEATURES}>
         <div className="features--img-container">
             <div className="features--ellipse-1"></div>
             <div className="features--ellipse-2"></div>
@@ -53,7 +54,7 @@ const Features = () => (
                 </InfoPoints>
             </div>
         </div>
-    </section>
+    </FadeBox>
 )
 
 export default Features 

@@ -3,13 +3,14 @@ import Description from '../items/description';
 import SecondTitle from '../items/second-title';
 import '../../style/section/jackpot.css'
 import InfoPoints from '../items/info-points';
+import FadeBox from '../items/fade-box';
 
 const Jackpot = ()=> {
 
     const paddingInfoPoints = "25px 50px"
     
     return (
-        <section className="jackpot">
+        <FadeBox className="jackpot">
             <div className="jackpot--first-part">
                 <SecondTitle value="Smart jackpots that you may love this anytime & anywhere"/>
                 <hr className="jackpot--side-bar"/>
@@ -54,7 +55,7 @@ const Jackpot = ()=> {
                         Get your blood tests delivered at home collect a sample from the news your blood test
                     </InfoPoints>
             </div>
-        </section>
+        </FadeBox>
     )
 }
 

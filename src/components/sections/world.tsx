@@ -11,6 +11,7 @@ import anime from "animejs"
 
 import { worldBlockAnim,worldBlockAnimBack } from '../../animation/world-block-anim';
 import { scrollViews } from '../../bin/scroll-params';
+import FadeBox from '../items/fade-box';
 
 
 
@@ -51,7 +52,7 @@ export default function World () {
     }
 
     return (
-        <section className="world" id={scrollViews.TESTIMINICAL}>
+        <FadeBox className="world" id={scrollViews.TESTIMINICAL}>
             <div className="world--map">
                 <div className="world--container-img">
                     <img src={require("../../assets/img/map.png")} alt="" className="world--map-background"/>
@@ -85,6 +86,6 @@ export default function World () {
                 enable={[currentComment === commentsData.length - 1 || currentComment > 0, currentComment < commentsData.length - 1]}
                 />            
             </div>
-        </section>
+        </FadeBox>
     )
 }

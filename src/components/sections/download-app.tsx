@@ -3,10 +3,11 @@ import SecondTitle from '../items/second-title';
 
 import "../../style/section/download-app.css"
 import Description from '../items/description';
+import FadeBox from '../items/fade-box';
 
 export default function DownloadApp () {
     return (
-        <section className="download-app">
+        <FadeBox className="download-app">
             <div className="download-app--container-text">
                 <SecondTitle value="Download our App now !" className="download-app--title"/>
                 <Description className="download-app--description">
@@ -25,6 +26,6 @@ export default function DownloadApp () {
             <div className="download-app--container-img">
                 <img src={require("../../assets/img/city.png")} alt="city" className="download-app--img"/>
             </div>          
-        </section>
+        </FadeBox>
     )
 }

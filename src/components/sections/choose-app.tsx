@@ -3,13 +3,14 @@ import Description from '../items/description';
 import InfoPoints from '../items/info-points';
 import SecondTitle from '../items/second-title';
 import "../../style/section/choose-app.css"
+import FadeBox from '../items/fade-box';
 
 const ChooseApp = ()=> {
 
 
 
     return(
-        <section className="choose-app">
+        <FadeBox className="choose-app">
             <div className="choose-app--header">
                 <SecondTitle value="Why you should choose our app" />
                 <Description className="choose-app--text-description">
@@ -85,7 +86,7 @@ const ChooseApp = ()=> {
                             Get your blood tests delivered at home collect a sample from the news your blood test
                 </InfoPoints>               
             </div>
-        </section>
+        </FadeBox>
     )
 }
 
